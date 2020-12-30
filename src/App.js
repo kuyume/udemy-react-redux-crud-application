@@ -2,11 +2,17 @@
 function App() {
   return (
     <>
-      <label htmlFor="bar">bar</label>
-      <input id="bar" type="text" onChange={() => {console.log("changed.")}} />
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
     </>
   )
   ;
+}
+
+const Cat = () => {
+  return <div>Meow!</div>
 }
 
 export default App;
