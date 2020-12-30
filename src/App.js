@@ -1,6 +1,12 @@
 
 function App() {
-  return <h1>Hello, World!</h1>;
+  return (
+    <>
+      <label htmlFor="bar">bar</label>
+      <input id="bar" type="text" onChange={() => {console.log("changed.")}} />
+    </>
+  )
+  ;
 }
 
 export default App;
